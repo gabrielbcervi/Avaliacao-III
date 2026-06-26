@@ -38,7 +38,7 @@ classroom-project/
 
 | Nome | GitHub |
 |---|---|
-| Integrante A | @integranteA |
+| Matheus Stroher | @maghteil |
 | Integrante B | @integranteB |
 | Integrante C | @integranteC |
 | Integrante D | @integranteD |
