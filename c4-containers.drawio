@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="C4 - Nível 2 - Containers">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- TÍTULO -->
+        <mxCell id="title" value="Diagrama de Containers – EduClass (C4 Nível 2)" style="text;fontSize=18;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="20" width="800" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- ATORES (externos à boundary) -->
+        <mxCell id="u_estudante" value="&lt;b&gt;Estudante&lt;/b&gt;&lt;br/&gt;[Usuário]" style="shape=mxgraph.c4.person;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u_professor" value="&lt;b&gt;Professor&lt;/b&gt;&lt;br/&gt;[Usuário]" style="shape=mxgraph.c4.person;fillColor=#08427B;fontColor=#ffffff;strokeColor=#073B6F;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="140" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- SYSTEM BOUNDARY -->
+        <mxCell id="boundary" value="EduClass" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];shape=mxgraph.flowchart.start_2;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;verticalAlign=top;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="760" height="620" as="geometry"/>
+        </mxCell>
+
+        <!-- CONTAINERS -->
+        <mxCell id="c_frontend" value="&lt;b&gt;Aplicação Web (Frontend)&lt;/b&gt;&lt;br/&gt;[Container: React + TypeScript]&lt;br/&gt;&lt;br/&gt;Interface do usuário acessada via&lt;br/&gt;navegador. SPA (Single Page App)." style="rounded=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c_api" value="&lt;b&gt;API REST (Backend)&lt;/b&gt;&lt;br/&gt;[Container: Node.js + Express]&lt;br/&gt;&lt;br/&gt;Processa requisições, aplica regras&lt;br/&gt;de negócio e controle de acesso (RBAC)." style="rounded=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="260" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c_db" value="&lt;b&gt;Banco de Dados&lt;/b&gt;&lt;br/&gt;[Container: PostgreSQL]&lt;br/&gt;&lt;br/&gt;Armazena usuários, turmas, atividades,&lt;br/&gt;entregas e avaliações." style="shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="620" y="500" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c_notif" value="&lt;b&gt;Serviço de Notificações&lt;/b&gt;&lt;br/&gt;[Container: Redis Pub/Sub]&lt;br/&gt;&lt;br/&gt;Recebe eventos e distribui notificações&lt;br/&gt;assíncronas (in-app e e-mail)." style="rounded=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="240" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- SISTEMAS EXTERNOS -->
+        <mxCell id="ext_s3" value="&lt;b&gt;AWS S3 / MinIO&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Armazenamento de arquivos&lt;br/&gt;de entregas e materiais." style="rounded=1;whiteSpace=wrap;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="200" width="200" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ext_email" value="&lt;b&gt;Serviço de E-mail&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Envio de e-mails de notificação&lt;br/&gt;(ex: SendGrid / SMTP)." style="rounded=1;whiteSpace=wrap;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;fontSize=11;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="520" width="200" height="110" as="geometry"/>
+        </mxCell>
+
+        <!-- SETAS -->
+        <mxCell id="r1" value="HTTPS / navegador" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;" edge="1" source="u_estudante" target="c_frontend" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r2" value="HTTPS / navegador" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;" edge="1" source="u_professor" target="c_frontend" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r3" value="Chamadas REST (JSON/HTTPS)" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;" edge="1" source="c_frontend" target="c_api" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r4" value="Leitura/Escrita SQL" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;" edge="1" source="c_api" target="c_db" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r5" value="Publica eventos de notificação" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;dashed=1;" edge="1" source="c_api" target="c_notif" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r6" value="Upload/Download de arquivos (SDK)" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;dashed=1;" edge="1" source="c_api" target="ext_s3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r7" value="Envia e-mails via API/SMTP" style="edgeStyle=orthogonalEdgeStyle;fontSize=10;dashed=1;" edge="1" source="c_notif" target="ext_email" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- LEGENDA -->
+        <mxCell id="leg1" value="&lt;b&gt;Legenda:&lt;/b&gt; Azul = Containers internos do EduClass | Cinza = Sistemas externos | Tracejado = Boundary do sistema" style="text;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="780" width="800" height="30" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
