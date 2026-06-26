@@ -48,7 +48,7 @@ classroom-project/
 ## Links
 
 - **Repositório GitHub:** *(https://github.com/gabrielbcervi/Avaliacao-III/edit/main/docs/README.md)*
-- **Gestor de Projetos (GitHub Projects):** *(inserir link)*
+- **Gestor de Projetos (GitHub Projects):** *(inserir link](https://github.com/users/gabrielbcervi/projects/1/views/1)*
 
 ---
 
