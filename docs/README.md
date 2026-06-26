@@ -40,7 +40,7 @@ classroom-project/
 |---|---|
 | Matheus Stroher | @maghteil |
 | Integrante B | @integranteB |
-| Integrante C | @integranteC |
+| João Henrique | @joaomarcks-hot |
 | Integrante D | @integranteD |
 
 ---
