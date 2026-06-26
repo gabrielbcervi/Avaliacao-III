@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Casos de Uso - EduClass">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- SISTEMA BOUNDARY -->
+        <mxCell id="sys" value="EduClass – Sistema de Gestão de Sala de Aula Online" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];shape=mxgraph.flowchart.start_2;fillColor=none;strokeColor=#000000;fontSize=13;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="280" y="60" width="900" height="980" as="geometry"/>
+        </mxCell>
+
+        <!-- ATORES -->
+        <mxCell id="a_estudante" value="Estudante" style="shape=mxgraph.flowchart.actor;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="400" width="60" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a_professor" value="Professor" style="shape=mxgraph.flowchart.actor;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="300" width="60" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a_coordenador" value="Coordenador" style="shape=mxgraph.flowchart.actor;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="700" width="60" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a_admin" value="Administrador" style="shape=mxgraph.flowchart.actor;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="700" width="60" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- USE CASES -->
+        <!-- Autenticação -->
+        <mxCell id="uc_login" value="UC01 – Realizar Login" style="ellipse;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Estudante -->
+        <mxCell id="uc_matricular" value="UC02 – Matricular-se em Turma" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_ver_atividades" value="UC03 – Visualizar Atividades" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_entregar" value="UC04 – Entregar Atividade" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="420" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_ver_nota" value="UC05 – Visualizar Nota e Feedback" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="520" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_notif" value="UC06 – Receber Notificações" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Professor -->
+        <mxCell id="uc_criar_turma" value="UC07 – Criar Turma" style="ellipse;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="840" y="220" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_publicar" value="UC08 – Publicar Atividade" style="ellipse;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="840" y="320" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_corrigir" value="UC09 – Corrigir Entrega e Atribuir Nota" style="ellipse;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="420" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_material" value="UC10 – Publicar Material de Apoio" style="ellipse;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="840" y="520" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Coordenador -->
+        <mxCell id="uc_painel" value="UC11 – Visualizar Painel de Desempenho" style="ellipse;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="720" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Admin -->
+        <mxCell id="uc_gerenciar" value="UC12 – Gerenciar Usuários" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="340" y="820" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc_config" value="UC13 – Configurar Plataforma" style="ellipse;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="820" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- ARESTAS: Estudante -->
+        <mxCell id="e1" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_login" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_matricular" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_ver_atividades" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_entregar" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_ver_nota" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="edgeStyle=none;" edge="1" source="a_estudante" target="uc_notif" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ARESTAS: Professor -->
+        <mxCell id="e7" style="edgeStyle=none;" edge="1" source="a_professor" target="uc_login" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=none;" edge="1" source="a_professor" target="uc_criar_turma" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="edgeStyle=none;" edge="1" source="a_professor" target="uc_publicar" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" style="edgeStyle=none;" edge="1" source="a_professor" target="uc_corrigir" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="edgeStyle=none;" edge="1" source="a_professor" target="uc_material" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ARESTAS: Coordenador -->
+        <mxCell id="e12" style="edgeStyle=none;" edge="1" source="a_coordenador" target="uc_login" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="edgeStyle=none;" edge="1" source="a_coordenador" target="uc_painel" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ARESTAS: Admin -->
+        <mxCell id="e14" style="edgeStyle=none;" edge="1" source="a_admin" target="uc_login" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e15" style="edgeStyle=none;" edge="1" source="a_admin" target="uc_gerenciar" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e16" style="edgeStyle=none;" edge="1" source="a_admin" target="uc_config" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- INCLUDE: entregar inclui validar prazo -->
+        <mxCell id="inc1" value="&lt;&lt;include&gt;&gt;" style="edgeStyle=none;dashed=1;fontSize=10;" edge="1" source="uc_entregar" target="uc_ver_atividades" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
