@@ -26,8 +26,8 @@ classroom-project/
 ├── uml/
 │   └── casos-de-uso.png       # Diagrama de Casos de Uso
 ├── c4/
-│   ├── contexto.png           # C4 Nível 1 – Contexto
-│   └── containers.png         # C4 Nível 2 – Containers
+│   ├── c4-contexto.png           # C4 Nível 1 – Contexto
+│   └── c4-containers.png         # C4 Nível 2 – Containers
 └── apresentacao/
     └── apresentacao-final.pdf  # Apresentação da banca
 ```
@@ -39,7 +39,7 @@ classroom-project/
 | Nome | GitHub |
 |---|---|
 | Matheus Stroher | @maghteil |
-| Integrante B | @integranteB |
+| Gabriel Cervi | @integranteB |
 | João Henrique | @joaomarcks-hot |
 | Andrey Moraes | @andreymoraes191-exe |
 
@@ -47,7 +47,7 @@ classroom-project/
 
 ## Links
 
-- **Repositório GitHub:** *(inserir link)*
+- **Repositório GitHub:** *(https://github.com/gabrielbcervi/Avaliacao-III/edit/main/docs/README.md)*
 - **Gestor de Projetos (GitHub Projects):** *(inserir link)*
 
 ---
