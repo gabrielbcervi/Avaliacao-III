@@ -41,7 +41,7 @@ classroom-project/
 | Matheus Stroher | @maghteil |
 | Integrante B | @integranteB |
 | João Henrique | @joaomarcks-hot |
-| Integrante D | @integranteD |
+| Andrey Moraes | @andreymoraes191-exe |
 
 ---
 
