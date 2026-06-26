@@ -39,7 +39,7 @@ classroom-project/
 | Nome | GitHub |
 |---|---|
 | Matheus Stroher | @maghteil |
-| Gabriel Cervi | @integranteB |
+| Gabriel Cervi | @gabrielbcervi |
 | João Henrique | @joaomarcks-hot |
 | Andrey Moraes | @andreymoraes191-exe |
 
@@ -48,7 +48,7 @@ classroom-project/
 ## Links
 
 - **Repositório GitHub:** *(https://github.com/gabrielbcervi/Avaliacao-III/edit/main/docs/README.md)*
-- **Gestor de Projetos (GitHub Projects):** *(inserir link](https://github.com/users/gabrielbcervi/projects/1/views/1)*
+- **Gestor de Projetos (GitHub Projects):** *(https://github.com/users/gabrielbcervi/projects/1/views/1)*
 
 ---
 
