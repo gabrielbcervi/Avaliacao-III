@@ -13,10 +13,10 @@
 
 | Integrante | Responsabilidade Principal |
 |---|---|
-| Integrante A | Visão do Produto, Stakeholders, MVP e coordenação geral |
-| Integrante B | Regras de Negócio, User Stories e Backlog |
-| Integrante C | BPMN (processo de entrega de atividade) e Diagrama de Casos de Uso (UML) |
-| Integrante D | Arquitetura de Software, Modelo C4 (Contexto e Containers) e Decisões Arquiteturais |
+| Matheus Stroher  | Visão do Produto, Stakeholders, MVP e coordenação geral |
+| Gabriel Cervi | Regras de Negócio, User Stories e Backlog |
+| João Marcks | BPMN (processo de entrega de atividade) e Diagrama de Casos de Uso (UML) |
+| Andrey Moraes | Arquitetura de Software, Modelo C4 (Contexto e Containers) e Decisões Arquiteturais |
 
 > Todos os integrantes participaram das revisões e validações cruzadas dos artefatos.
 
