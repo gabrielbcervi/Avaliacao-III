@@ -4,7 +4,7 @@
 
 **Projeto:** EduClass – Sistema de Gestão de Sala de Aula Online  
 **Sprint:** Sprint 1 (Concepção e Modelagem)  
-**Duração:** 3 aulas (8 horas no total)  
+**Duração:** 2 aulas (6 horas no total)  
 **Integrantes:** Gabriel Cervi, Matheus Stroher, Andrey Moraes, João Henrique Marcks
 
 ---
